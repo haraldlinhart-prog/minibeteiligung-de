@@ -1,12 +1,10 @@
 'use client'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-const DEMO_COMPANIES = [
-  { name: 'MUSTERMANN', fullName: 'Mustermann Trading Series', price: 17.50, change: +2.3, shares: 1200, nominal: 5 },
-  { name: 'ALPHATECH',  fullName: 'AlphaTech Solutions Series', price: 11.00, change: -0.8, shares: 800,  nominal: 5 },
-  { name: 'BERLINCAP',  fullName: 'Berlin Capital Series',      price: 22.00, change: +5.1, shares: 500,  nominal: 10},
-  { name: 'RHEINGOLD',  fullName: 'Rheingold Ventures Series',  price: 4.40,  change: +0.0, shares: 3000, nominal: 2 },
+// Fallback wenn noch keine echten Daten vorhanden
+const PLACEHOLDER = [
+  { name: 'MINIBETEILIGUNG', fullName: 'Minibeteiligung.de', price: 0, change: 0, nominal: 5 },
 ]
 
 function calcPreview(nominal: number, qty: number) {
@@ -19,6 +17,27 @@ export default function Home() {
   const [nominal, setNominal] = useState(5)
   const [qty, setQty] = useState(10)
   const preview = calcPreview(nominal, qty)
+  const [tickerData, setTickerData] = useState<any[]>([])
+
+  useEffect(() => {
+    fetch('/api/companies')
+      .then(r => r.json())
+      .then(d => {
+        const companies = d.data || []
+        if (companies.length > 0) {
+          setTickerData(companies.map((c: any) => ({
+            name: c.short_name,
+            fullName: c.name,
+            price: Number(c.current_price || (Number(c.nominal_usd) * 3.5)),
+            nominal: Number(c.nominal_usd),
+            change: 0, // Kursveränderung später via Bids berechnet
+          })))
+        }
+      })
+      .catch(() => {})
+  }, [])
+
+  const ticker = tickerData.length > 0 ? tickerData : PLACEHOLDER
 
   return (
     <>
@@ -41,7 +60,7 @@ export default function Home() {
       {/* TICKER BAND */}
       <div className="fixed top-14 left-0 right-0 z-40 bg-void-2 border-b border-white/4 overflow-hidden">
         <div className="flex gap-8 px-4 py-1.5 text-xs font-mono animate-none whitespace-nowrap">
-          {[...DEMO_COMPANIES, ...DEMO_COMPANIES].map((c, i) => (
+          {(ticker.length > 1 ? [...ticker, ...ticker] : ticker).map((c, i) => (
             <span key={i} className="flex items-center gap-2 shrink-0">
               <span className="text-slate/60">{c.name}</span>
               <span className="text-white">${c.price.toFixed(2)}</span>
@@ -137,7 +156,7 @@ export default function Home() {
               <div className="card">
                 <div className="text-xs text-slate/50 uppercase tracking-widest mb-3 font-medium">Aktuelle Kurse</div>
                 <div className="space-y-2">
-                  {DEMO_COMPANIES.map(c => (
+                  {(tickerData.length > 0 ? tickerData : PLACEHOLDER).map(c => (
                     <div key={c.name} className="flex items-center justify-between py-1.5 border-b border-white/4 last:border-0">
                       <div>
                         <span className="text-xs font-mono font-medium text-white">{c.name}</span>
@@ -281,7 +300,7 @@ export default function Home() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-white/4">
-                  {DEMO_COMPANIES.map(c => (
+                  {(tickerData.length > 0 ? tickerData : PLACEHOLDER).map(c => (
                     <tr key={c.name} className="hover:bg-white/2 transition-colors">
                       <td className="py-4">
                         <div className="font-mono font-medium text-white">{c.name}</div>
