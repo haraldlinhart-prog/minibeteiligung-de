@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 
 // Fallback wenn noch keine echten Daten vorhanden
 const PLACEHOLDER = [
-  { name: 'MINIBETEILIGUNG', fullName: 'Minibeteiligung.de', price: 0, change: 0, nominal: 5 },
+  { name: 'MINIBETEILIGUNG', fullName: 'Minibeteiligung.de', price: 0, change: 0, nominal: 5, shares: 0 },
 ]
 
 function calcPreview(nominal: number, qty: number) {
@@ -60,7 +60,7 @@ export default function Home() {
       {/* TICKER BAND */}
       <div className="fixed top-14 left-0 right-0 z-40 bg-void-2 border-b border-white/4 overflow-hidden">
         <div className="flex gap-8 px-4 py-1.5 text-xs font-mono animate-none whitespace-nowrap">
-          {(ticker.length > 1 ? [...ticker, ...ticker] : ticker).map((c, i) => (
+          {(tickerData.length > 0 ? [...tickerData, ...tickerData] : PLACEHOLDER).map((c: any, i: number) => (
             <span key={i} className="flex items-center gap-2 shrink-0">
               <span className="text-slate/60">{c.name}</span>
               <span className="text-white">${c.price.toFixed(2)}</span>
@@ -160,7 +160,7 @@ export default function Home() {
                     <div key={c.name} className="flex items-center justify-between py-1.5 border-b border-white/4 last:border-0">
                       <div>
                         <span className="text-xs font-mono font-medium text-white">{c.name}</span>
-                        <span className="text-xs text-slate/40 ml-2">{c.shares.toLocaleString()} Stk.</span>
+                        <span className="text-xs text-slate/40 ml-2">{(c.shares || 0).toLocaleString()} Stk.</span>
                       </div>
                       <div className="text-right">
                         <span className="font-mono text-sm text-white">${c.price.toFixed(2)}</span>
@@ -313,7 +313,7 @@ export default function Home() {
                           {c.change >= 0 ? '+' : ''}{c.change.toFixed(1)}%
                         </span>
                       </td>
-                      <td className="py-4 text-right font-mono text-slate/60">{c.shares.toLocaleString()}</td>
+                      <td className="py-4 text-right font-mono text-slate/60">{(c.shares || 0).toLocaleString()}</td>
                       <td className="py-4 text-right">
                         <Link href="/auth" className="text-xs text-blue-glow hover:text-blue">Kaufen →</Link>
                       </td>
