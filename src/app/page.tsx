@@ -319,6 +319,8 @@ export default function Home() {
                 { title: 'Privatbörse', text: 'Eine echte private Handelsplattform: Käufer und Verkäufer treffen sich, Gebote bestimmen den Kurs.' },
                 { title: 'Stille Beteiligung', text: 'Ergänzend zur Minibeteiligung: Stille Gesellschaft per Privatvertrag ohne Notar bei firmenaktie.de.' },
                 { title: 'Ohne Mindestanlage', text: 'Keine Mindestanlage, kein Jahresbeitrag, kein Depotführungsentgelt. Kaufen Sie was Sie möchten.' },
+                { title: 'Privatmarkt Beteiligung', text: 'Der Privatmarkt ist legal, anerkannt und seit Jahrhunderten etabliert. Keine Börse, kein Broker — direkte Beteiligung zwischen Käufer und Unternehmen.' },
+                { title: 'Stille Gesellschaft', text: 'Die stille Beteiligung ist Berufsschulwissen: anerkannte Unternehmensfinanzierung, die seit Jahrzehnten im deutschen Lehrplan steht.' },
               ].map((item, i) => (
                 <div key={i} className="p-5 bg-void-2 rounded border border-white/6 hover:border-blue/20 transition-colors group">
                   <div className="text-blue-glow text-xs mb-2 group-hover:text-blue transition-colors">→</div>
@@ -326,6 +328,77 @@ export default function Home() {
                   <div className="text-xs text-slate/55 leading-relaxed">{item.text}</div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+
+        {/* PRIVATMARKT MANIFEST */}
+        <section className="py-24 px-4 sm:px-8 bg-void-2">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+              <div>
+                <div className="text-xs text-blue-glow uppercase tracking-widest mb-4 font-medium">Der Privatmarkt</div>
+                <h2 className="font-display text-4xl font-bold text-white mb-6 leading-tight">
+                  Man muss keine SpaceX-Aktien kaufen um am Kapitalmarkt zu gewinnen.
+                </h2>
+                <p className="text-slate leading-relaxed mb-4">
+                  Der Privatmarkt ist einer der größten und am meisten ignorierten Teile des 
+                  Finanzmarkts. Während Millionen von Kleinanlegern auf Börsenkurse starren 
+                  und auf fallende Zinsen warten, werden täglich Millionen in Form von 
+                  Privatbeteiligungen bewegt — ohne Bank, ohne Broker, ohne Börse.
+                </p>
+                <p className="text-slate leading-relaxed mb-4">
+                  Die stille Beteiligung etwa ist kein Geheimwissen: Sie wird seit Jahrzehnten 
+                  in deutschen Berufsschulen als anerkannte Alternative zur klassischen 
+                  Bankfinanzierung gelehrt. Es ist eine der ältesten Formen der 
+                  Unternehmensfinanzierung überhaupt — und vollkommen legal.
+                </p>
+                <p className="text-slate leading-relaxed mb-6">
+                  Was als "grauer Kapitalmarkt" bezeichnet wird, ist in Wirklichkeit oft nichts 
+                  anderes als der <strong className="text-white">unregulierte Privatmarkt</strong> — 
+                  unreguliert nicht im Sinne von illegal, sondern im Sinne von: nicht von Banken 
+                  und Börsenaufsichten kontrolliert. Das ist ein Unterschied.
+                </p>
+                <div className="border-l-2 border-blue/40 pl-4 text-slate/70 text-sm italic leading-relaxed">
+                  "Der Privatmarkt ist ein legitimer, seit Jahrhunderten funktionierender 
+                  Teil des Wirtschaftslebens. Minibeteiligung.de macht ihn zugänglich 
+                  für alle — ab fünf Dollar."
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                {[
+                  {
+                    title: 'Privatmarkt ≠ Grauer Kapitalmarkt',
+                    text: 'Der Begriff "grauer Kapitalmarkt" wird oft pauschal für alles verwendet, was außerhalb regulierter Börsen stattfindet. Das ist falsch. Privatbeteiligungen, stille Gesellschaften und Series LLC Aktien sind legale, anerkannte Finanzinstrumente.',
+                    icon: '⚖️'
+                  },
+                  {
+                    title: 'Stille Beteiligung — Berufsschulwissen',
+                    text: 'Die stille Beteiligung ist kein Exotikum. Sie steht in jedem deutschen Berufsschul-Lehrbuch für Kaufleute als anerkannte Form der Unternehmensfinanzierung. Der stille Gesellschafter beteiligt sich am Gewinn ohne im Handelsregister zu erscheinen.',
+                    icon: '🎓'
+                  },
+                  {
+                    title: 'Klein anfangen, groß denken',
+                    text: 'Warum soll eine Beteiligung erst ab EUR 10.000 sinnvoll sein? Minibeteiligung.de zeigt: Auch ab USD 5 kann man sich an einem Unternehmen beteiligen, Kursentwicklungen verfolgen und an Wertsteigerungen teilhaben.',
+                    icon: '📈'
+                  },
+                  {
+                    title: 'Ohne Intermediär',
+                    text: 'Kein Broker, keine Bank, keine Verwahrstelle. Käufer und Verkäufer handeln direkt. Das spart Gebühren, erhöht die Transparenz und gibt beiden Seiten die Kontrolle zurück.',
+                    icon: '🤝'
+                  },
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4 p-4 bg-void-3 rounded-lg border border-white/5 hover:border-blue/20 transition-colors">
+                    <span className="text-2xl shrink-0">{item.icon}</span>
+                    <div>
+                      <div className="text-sm font-semibold text-white mb-1">{item.title}</div>
+                      <div className="text-xs text-slate/60 leading-relaxed">{item.text}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
