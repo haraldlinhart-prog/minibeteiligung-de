@@ -3,16 +3,24 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Minibeteiligung.de — Private Aktienbörse ab USD 5',
-  description: 'Erwerben Sie Aktien von Series LLCs ab USD 5 Nennwert. Private Mini-Börse für Kleinanleger — Minibeteiligung, Privataktie, stille Beteiligung, private Börsenbeteiligung, Privatinvestor.',
+  description: 'Minibeteiligung.de — die private Börse für Kleinanleger ab USD 5. Aktien von Series LLCs kaufen, handeln und verwalten. Stille Beteiligungen, Privataktien, Direktinvestments ohne Bank und Broker. Der Privatmarkt ist legal, anerkannt und seit Jahrhunderten etabliert.',
   keywords: [
     'Minibeteiligung', 'Mini Beteiligung', 'Privataktie', 'private Börse',
     'Privatbörse', 'private Beteiligungsbörse', 'Privatinvestor', 'Kleinanleger',
-    'stille Beteiligung kaufen', 'Aktien ab 5 Dollar', 'Mikroinvestment',
-    'Series LLC Aktien', 'Firmenaktie kaufen', 'Unternehmensanteile kaufen',
+    'stille Beteiligung kaufen', 'stille Beteiligung', 'stiller Gesellschafter',
+    'stille Gesellschaft', 'stille Beteiligung GmbH', 'stille Beteiligung UG',
+    'Aktien ab 5 Dollar', 'Mikroinvestment', 'Series LLC Aktien',
+    'Firmenaktie kaufen', 'Unternehmensanteile kaufen',
     'Beteiligung ab 5 Euro', 'Mini Aktie', 'Kleinstbeteiligung',
     'Aktiendepot privat', 'private Aktiengesellschaft', 'LLC Aktien kaufen',
     'Privatanleger Aktien', 'Börsenbeteiligung ohne Bank',
     'Unternehmensanteile ohne Notar', 'Beteiligung ohne Mindestanlage',
+    'Privatmarkt Beteiligung', 'grauer Kapitalmarkt Alternative',
+    'Privatmarkt Investition', 'Privatmarkt Aktien', 'Direktbeteiligung',
+    'Beteiligung ohne Broker', 'Beteiligung ohne Bank',
+    'private Unternehmensfinanzierung', 'Kleinbeteiligung Unternehmen',
+    'Privatbörse Deutschland', 'alternative Geldanlage',
+    'Unternehmensanteile Privatmarkt', 'Aktienhandel privat',
   ].join(', '),
   openGraph: {
     title: 'Minibeteiligung.de — Private Aktienbörse ab USD 5',
