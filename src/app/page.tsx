@@ -475,7 +475,10 @@ export default function Home() {
             © {new Date().getFullYear()} Minibeteiligung.de · PAN21.COM Corporate Consultants Ltd · 61 Bridge Street, Kington, Herefordshire HR5 3DJ, UK
           </div>
         </footer>
-      </main>
+      {/* <!-- REVIVE:START --> */}
+<div dangerouslySetInnerHTML={{__html: "<div style=\"display:flex;justify-content:center;margin:16px 0;\">\n<ins data-revive-zoneid=\"6\" data-revive-id=\"0b01ba1194fdc0e89c6321458dbc5814\"></ins>\n<script async src=\"//ads.pan21.com/www/delivery/asyncjs.php\"></script>\n</div>"}} />
+{/* <!-- REVIVE:END --> */}
+</main>
     </>
   )
 }
