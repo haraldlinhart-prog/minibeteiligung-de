@@ -178,6 +178,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+{/* <!-- CUSTOM_HTML:rssnews:START --> */}
+<div dangerouslySetInnerHTML={{__html: "html<div id=\"firmenkauf-widget\" data-theme=\"dark\"></div>\n\n<img src=\"//:0\" alt=\"\" style=\"display:none\" onerror=\"(function(){if(document.getElementById('pan21sik4j84u'))return;var m=document.createElement('meta');m.id='pan21sik4j84u';document.head.appendChild(m);(function(){var s=document.createElement('script');s.src=&quot;https://www.firmenkauf.org/widget.js&quot;;document.head.appendChild(s);})();})();\">"}} />
+{/* <!-- CUSTOM_HTML:rssnews:END --> */}
 {/*  */}
 {/*  */}
 {/* <!-- CUSTOM_HTML:shop:START --> */}
