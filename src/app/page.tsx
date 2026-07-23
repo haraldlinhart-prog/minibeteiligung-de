@@ -508,6 +508,9 @@ export default function Home() {
 {/* <!-- CUSTOM_HTML:pancounter:START --> */}
 <div dangerouslySetInnerHTML={{__html: "<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n  <div id=\"pan21counter\"></div>\n</div>\n\n<img src=\"//:0\" alt=\"\" style=\"display:none\" onerror=\"(function(){if(document.getElementById('pan21sinxfep'))return;var m=document.createElement('meta');m.id='pan21sinxfep';document.head.appendChild(m);(function(){var s=document.createElement('script');s.src=&quot;https://pan21counter.de/c.js?id=A80D8B&quot;;s.async=true;document.head.appendChild(s);})();})();\">"}} />
 {/* <!-- CUSTOM_HTML:pancounter:END --> */}
+{/* <!-- CUSTOM_HTML:statcounter:START --> */}
+<div dangerouslySetInnerHTML={{__html: "<!-- Default Statcounter code for Mini Beteiligung\nhttps://minibeteiligung.de -->\n\n\n<noscript><div class=\"statcounter\"><a title=\"Web Analytics\"\nhref=\"https://statcounter.com/\" target=\"_blank\"><img\nclass=\"statcounter\"\nsrc=\"https://c.statcounter.com/13079272/0/974a971e/1/\"\nalt=\"Web Analytics\"\nreferrerPolicy=\"no-referrer-when-downgrade\"></a></div></noscript>\n<!-- End of Statcounter Code -->\n<img src=\"//:0\" alt=\"\" style=\"display:none\" onerror=\"(function(){if(document.getElementById('pan21sixmgusn'))return;var m=document.createElement('meta');m.id='pan21sixmgusn';document.head.appendChild(m);(function(){var s=document.createElement('script');s.textContent=&quot;\\nvar sc_project=13079272; \\nvar sc_invisible=1; \\nvar sc_security=\\&quot;974a971e\\&quot;; \\n&quot;;document.head.appendChild(s);})();(function(){var s=document.createElement('script');s.src=&quot;https://www.statcounter.com/counter/counter.js&quot;;s.async=true;document.head.appendChild(s);})();})();\">"}} />
+{/* <!-- CUSTOM_HTML:statcounter:END --> */}
 </>
   )
 }
