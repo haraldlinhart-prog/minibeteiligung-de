@@ -1,0 +1,16 @@
+# Minibeteiligung.de
+
+> Minibeteiligung.de — die private Börse für Kleinanleger ab USD 5. Aktien von Series LLCs kaufen, handeln und verwalten. Stille Beteiligungen, Privataktien, Direktinvestments ohne Bank und Broker. Der Privatmarkt ist legal, anerkannt und seit Jahrhunderten etabliert.
+
+Diese Datei richtet sich an KI-Assistenten und Sprachmodelle (llms.txt-Standard) und beschreibt kurz, worum es auf dieser Website geht, damit Inhalte korrekt verstanden und zusammengefasst werden können.
+
+## Themen auf dieser Seite
+- Wie funktioniert Minibeteiligung.de?
+- Transparente Ausgabepreise
+- Aktuelle Listings
+- Anwendungsfälle
+- Man muss keine SpaceX-Aktien kaufen um am Kapitalmarkt zu gewinnen.
+- Bereit zu investieren?
+
+## Kontakt
+- Website: https://minibeteiligung.de
