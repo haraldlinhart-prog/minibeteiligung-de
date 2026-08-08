@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next'
 
-const BASE_URL = 'https://minibeteiligung.de'
+const BASE_URL = 'https://www.minibeteiligung.de'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
