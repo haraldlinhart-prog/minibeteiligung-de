@@ -1,4 +1,5 @@
 import Link from 'next/link'
+export const metadata = { alternates: { canonical: 'https://www.minibeteiligung.de/impressum' } }
 export default function Impressum() {
   return (
     <div className="min-h-screen bg-void px-4 sm:px-8 py-16">
