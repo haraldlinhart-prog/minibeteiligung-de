@@ -13,4 +13,4 @@ Diese Datei richtet sich an KI-Assistenten und Sprachmodelle (llms.txt-Standard)
 - Bereit zu investieren?
 
 ## Kontakt
-- Website: https://minibeteiligung.de
+- Website: https://www.minibeteiligung.de/

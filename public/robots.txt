@@ -33,4 +33,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://minibeteiligung.de/sitemap.xml
+Sitemap: https://www.minibeteiligung.de/sitemap.xml

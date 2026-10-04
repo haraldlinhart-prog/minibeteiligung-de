@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Minibeteiligung.de — Private Aktienbörse ab USD 5',
     description: 'Kaufen und handeln Sie Aktien von Series LLCs. Ab USD 5 Nennwert, keine Bank, kein Mindestbetrag.',
-    url: 'https://www.minibeteiligung.de',
+    url: 'https://www.minibeteiligung.de/',
     siteName: 'Minibeteiligung.de',
     locale: 'de_DE',
     type: 'website',
   },
-  alternates: { canonical: 'https://www.minibeteiligung.de' },
+  alternates: { canonical: 'https://www.minibeteiligung.de/' },
   robots: { index: true, follow: true },
 }
 
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "Minibeteiligung.de",
-          "url": "https://www.minibeteiligung.de",
+          "url": "https://www.minibeteiligung.de/",
           "description": "Private Mini-Börse für Aktien von Series LLCs ab USD 5"
         })}} />
       </head>
