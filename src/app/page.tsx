@@ -484,7 +484,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-white/4 pt-6 text-xs text-slate/25">
-            © {new Date().getFullYear()} Minibeteiligung.de · PAN21.COM Corporate Consultants Ltd · 61 Bridge Street, Kington, Herefordshire HR5 3DJ, UK
+            © {new Date().getFullYear()} Minibeteiligung.de · PAN21.com International LLC · 7533 South Center View CT, STE R, West Jordan, UT 84084, USA
           </div>
         </footer>
       {/* <!-- REVIVE:START --> */}
