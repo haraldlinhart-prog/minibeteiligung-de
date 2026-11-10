@@ -501,10 +501,10 @@ export default function Home() {
 {/* <!-- SUPPORT:END --> */}
 </main>
     {/* <!-- DIRECTORIES:START --> */}
-<div style={{display:'flex',justifyContent:'center',gap:'16px',flexWrap:'wrap',margin:'16px 0'}}>
-<a href="https://ffa-links.de" target="_blank" rel="noopener"><img src="https://ffa-links.de/banner.svg" alt="FFA-Links" height={60} style={{borderRadius:'4px'}} /></a>
-<a href="https://swiss-quality.de" target="_blank" rel="noopener"><img src="https://swiss-quality.de/banner.svg" alt="Swiss Quality" height={60} style={{borderRadius:'4px'}} /></a>
-<a href="https://german-quality.net" target="_blank" rel="noopener"><img src="https://german-quality.net/banner.svg" alt="German Quality" height={60} style={{borderRadius:'4px'}} /></a>
+<div style={{display:'flex',justifyContent:'center',gap:'12px',flexWrap:'wrap',margin:'1rem 0 0'}}>
+<a href="https://www.swiss-quality.de/ref/654efec365f03a918b" target="_blank" rel="noopener"><img src="https://www.swiss-quality.de/banner.svg" width={120} height={60} alt="Swiss Quality" /></a>
+<a href="https://www.german-quality.net/ref/a9554e4dd079b860a9" target="_blank" rel="noopener"><img src="https://www.german-quality.net/banner.svg" width={120} height={60} alt="German Quality" /></a>
+<a href="https://www.ffa-links.de/ref/be452b2fc9640a9c03" target="_blank" rel="noopener"><img src="https://www.ffa-links.de/banner.svg" width={120} height={60} alt="FFA-Links" /></a>
 </div>
 {/* <!-- DIRECTORIES:END --> */}
 {/*  */}
